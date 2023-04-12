@@ -9,7 +9,8 @@
 </head>
 <body>
     
-    <div class="container">
+    <div class="container-fluid">
+       <form action="#" method="post">
         <div class="row">
             <div class="col-12">
                 <h1>Calculator App</h1>
@@ -18,28 +19,37 @@
         <div class="row">
             <div class="col-12">
                 <label for="a">a</label><br>
-                <input type="number" name="a" id="a">
+                <input type="number" class="input" name="a" id="a">
             </div>
         </div>
         <div class="row">
             <div class="col-12">
                 <label for="b">b</label><br>
-                <input type="number" name="b" id="b">
+                <input type="number" class="input" name="b" id="b">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <br>
+                <button type="button" class="btn btn-primary" id="plus">plus</button>
+            </div>
+            <div class="col-6">
+                <button type="reset" class="btn btn-primary" id="plus">reset</button>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
                 <br>
-                <button id="plus">plus</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <br>
-                <input type="number" readonly>
+                <input class="form-control" type="number" id="uitvoer" readonly>
             </div>
         </div>
     </div>
+       </form>
+    <footer>
+        <div class="container">
+            fineas &copy;
+        </div>
+    </footer>
 
     <script src="calculator.js">
 
