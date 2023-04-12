@@ -1,11 +1,18 @@
 const getalA=document.getElementById('a');
 const getalB=document.getElementById('b');
 const uitvoer=document.getElementById('uitvoer');
-const knop=document.getElementById('plus');
+const optellen=document.getElementById('plus');
+const verschil=document.getElementById('verschil')
 
-function optellen () {
+function Optellen () {
     let res=parseInt(getalA.value)+parseInt(getalB.value);
     uitvoer.value=res;
 }
 
-knop.addEventListener('click',optellen);
+function Verschil () {
+    let res=parseInt(getalA.value)-parseInt(getalB.value);
+    uitvoer.value=res;
+}
+
+optellen.addEventListener('click',Optellen);
+verschil.addEventListener('click',Verschil)
